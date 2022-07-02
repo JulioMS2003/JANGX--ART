@@ -1,0 +1,243 @@
+*, *:not(i[class*='fa'])::after, *:not(i[class*='fa'])::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+body {
+    background: black;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/*encabezado*/
+.background__header {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.background__header::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
+}
+
+.background__header img {
+    width: 100%;
+    height: 700px;
+}
+
+/*cuerpo*/
+
+.contenido__cuerpo {
+    display: flex;
+    gap: 70px;
+    margin: 100px 100px;
+    color: aliceblue;
+}
+
+.texto__cuerpo {
+    font-size: 16px;
+    padding: 100px 0 0;
+    line-height: 2;
+}
+
+.texto__cuerpo h2 {
+    text-decoration: underline;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.texto__cuerpo p {
+    color: #aaaaaa;
+}
+
+.contenido__cuerpo img {
+    width: 500px;
+    padding: 120px 0;
+}
+
+/*historia*/
+.card__historia{
+    border-top: 1px solid white;
+    color: white;
+    margin: 20px 0;
+    padding: 20px 20px;
+}
+
+
+.card__historia h1 {
+    font-size: 40px;
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(221, 220, 220);
+    text-decoration: underline;
+}
+
+.card__historia p{
+    color: #cbcbcb;
+}
+
+.container__historia{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px 20px;
+    margin: 50px;
+}
+
+.historia{
+    margin: 35px 5px;
+    background: linear-gradient(rgb(114, 181, 187), #575e92fd,rgb(43, 84, 149));
+    padding: 10px 8px;
+}
+
+.historia h2{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+    
+.historia p {
+
+    margin: 15px 0;
+}
+
+/*integrantes*/
+
+.card__colaboradores {
+    margin: 180px 0 ;
+    color: aliceblue;
+    border-top: 1px solid white;
+    
+}
+
+.card__colaboradores h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 0;
+    padding-top: 10px;
+    color: aliceblue;
+}
+
+.container__colaboradores {
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.colaboradores1, .colaboradores2 , .colaboradores3, .colaboradores4 {
+    text-align: center;
+    padding: 40px 20px 45px;
+    
+}
+.colaboradores1, .colaboradores2 , .colaboradores3 {
+    border-right: solid 1px;
+}
+
+
+.colaboradores1 h2 {
+    padding: 0 20px 20px 20px;
+    color: paleturquoise;
+}
+.colaboradores2 h2 {
+    padding: 0 20px 20px 20px;
+    color: paleturquoise;
+}
+.colaboradores3 h2 {
+    padding: 0 20px 20px 20px;
+    color: paleturquoise;
+}
+.colaboradores4 h2 {
+    padding: 0 20px 20px 20px;
+    color: paleturquoise;
+}
+
+.personal_image {
+    width: 300px;
+}
+
+.colaboradores1 p {
+    padding: 30px 0;
+}
+.colaboradores2 p {
+    padding: 30px 0;
+}
+.colaboradores3 p {
+    padding: 30px 0;
+}
+.colaboradores4 p {
+    padding: 30px 0;
+}
+
+.colaboradores a {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 5px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid black;
+}
+.colaboradores1 a {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 5px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid black;
+}
+.colaboradores2 a {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 5px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid black;
+}
+.colaboradores3 a {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 5px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid black;
+}
+.colaboradores4 a {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 5px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.colaboradores1 a:hover {
+    background: paleturquoise;
+}
+.colaboradores2 a:hover {
+    background: paleturquoise;
+}
+.colaboradores3 a:hover {
+    background: paleturquoise;
+}
+.colaboradores4 a:hover {
+    background: paleturquoise;
+}
+
+.footer__container ul li a {
+    text-decoration: none;
+}
+.footer__links {
+    border-bottom: solid black;
+}

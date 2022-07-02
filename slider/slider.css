@@ -1,0 +1,122 @@
+/*----------Slider-----------*/
+@font-face {
+    font-family: 'flexslider-icon';
+    src: url('fonts/flexslider-icon.eot');
+    src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') 
+    format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  } /*icono*/
+  
+  .flexslider{
+      width: 100%;
+      height: 400px;
+      position: center;
+  }
+  
+  .slides{
+      overflow: hidden;  /*muestra solo lo que se debe mostrar, oculta contenido que salga del elemento*/
+  }
+  
+  .slides img{
+      width: 100%;
+      height: 460px;
+  }
+  
+  .slides,
+  .flex-control-nav,.slides  /*esto es para cambiar las imagenes "botones"*/
+      
+  
+  .flex-direction-nav  /*dirección de los botones*/
+  {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .flex-control-nav /*orden de los botones*/
+  {
+      width: 100%;
+      text-align: center;
+      position: relative;
+      bottom: 5%; 
+      
+  }
+  
+  .flex-control-nav li{
+      display: inline-block; 
+      margin:30px 6px;
+  }
+  
+  .flex-control-nav li a{
+      display: block;
+      background: #777777;
+      width: 12px;
+      height: 12px;
+      border-radius: 12px;
+      text-indent: -9999px;
+  }
+  
+  .flex-control-nav li a:hover{
+      background: #7b7171;
+  }
+  
+  .flex-control-nav li a.flex-active{
+      background: #4fa5b0;	
+  }
+  
+  .flex-direction-nav a{
+      display: block;
+      position: absolute;
+      top: 30%;
+      z-index: 999; /*este encima de la imagen*/
+      width: 40px;
+      height: 40px;
+      overflow: hidden;
+      transition: all 0.5s ease-in-out; 
+  }
+   /*Esto va en base a js para el movimineto, orden y ubicación  de las flechas */
+  
+  .flex-direction-nav .flex-prev  /*para la flecha de la izquierda*/{
+      left: 0;
+  }
+  
+  .flex-direction-nav .flex-next/*para la flecha de la derecha*/{
+      right: 0;
+      font-family: "flexslider-icon";
+  }
+  
+  .flex-direction-nav a:before {
+    font-family: "flexslider-icon"; /*este es el icono , pero igual se puede cambiar por OTROS ICONOS*/
+    font-size: 40px;
+    display: inline-block;
+    color: aliceblue;
+    content: '\f001';/*LLAMA A LA FLECHA JS*/
+    
+  }
+  .flex-direction-nav a.flex-next:before {
+    content: '\f002'; /*LLAMA A LA FLECHA JS*/
+  }
+  
+  
+  
+  .flexslider:hover .flex-direction-nav .flex-prev /*flecha a la izquierda*/{
+      opacity: 0.7;
+      left: 10px;
+  }
+  /*ir a la anterior y cambie el color*/
+  .flexslider:hover .flex-direction-nav .flex-prev:hover{
+      opacity: 1;
+  }
+  
+  .flexslider:hover .flex-direction-nav .flex-next/*flecha a la derecha*/ {
+      opacity: 0.7;
+      right: 10px;
+  }
+  /*Es para pasar a la siguiente y cambie el color*/
+  .flexslider:hover .flex-direction-nav .flex-next:hover{
+      opacity: 1;
+  }
+
+
+/*--------------------------------------------------------------------------*/

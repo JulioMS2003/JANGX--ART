@@ -1,0 +1,155 @@
+*, *:not(i[class*='fa'])::after, *:not(i[class*='fa'])::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+body {
+    background: black;
+}
+/*encabezado*/
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+/*encabezado*/
+.background__header {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.background__header::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
+}
+
+.background__header img {
+    width: 100%;
+    height: 700px;
+}
+
+/*cuerpo*/
+
+.texto {
+    margin: 150px auto;
+    align-items: center;
+    text-align: center;
+    color: azure;
+}
+.texto h1 {
+    margin: 15px auto;
+    width: 35%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+.container__texto {
+    margin: 25px auto 0;
+    width: 65%;
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.explora {
+    display:flex;
+    width: 80%;
+    margin: 100px auto;
+    gap: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.explora img {
+    width: 280px;
+    display: block;
+    height: 450px;
+}
+
+.card__explora {
+    position: relative;
+    display: inline-block;
+    transition: all 0.5s;
+    opacity: 0.7;
+    
+}
+
+.card__explora:hover {
+    margin: 20px;
+    box-shadow: 0 0 5px white, 0 0 10px white , 0 0 30px white;
+    height: 100%;
+    opacity: 1;
+}
+
+.container__txt {
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    font-size: 20px;
+    width: 100%;
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0.526);
+}
+
+.card__pintores{
+    display:flex;
+    width: 75%;
+    margin: 100px auto;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+}
+
+.container__pintor {
+    width: 480px;
+    height: 300px;
+    position: relative;
+}
+
+.gif {
+    width: 480px;
+    height: 300px;
+}
+
+.pintor__img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    transition: all 1s;
+}
+
+.pintor__img:hover {
+    opacity: 0;
+}
+
+.pintores {
+    width: 480px;
+}
+
+.title__pintor, .title__pintor h2{
+    margin: 25px 0 ;
+    padding-inline-start: 10px;
+}
